@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitaCare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="VitaCare">
+      <span class="brand-icon">+</span>
+      VitaCare
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a class="nav-cta" href="#agendar">Agendar consulta</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tag">Atendimento humanizado</p>
+        <h1>Cuidado com excelência para sua saúde</h1>
+        <p>
+          Profissionais qualificados, especialidades essenciais e uma experiência simples para marcar sua consulta.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#agendar">Agendar consulta</a>
+          <a class="button secondary" href="#servicos">Ver especialidades</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Consultas disponíveis">
+        <div>
+          <span>Clínico geral</span>
+          <strong>Hoje</strong>
+        </div>
+        <div>
+          <span>Cardiologia</span>
+          <strong>Amanhã</strong>
+        </div>
+        <div>
+          <span>Pediatria</span>
+          <strong>14h30</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Indicadores da clínica">
+      <article>
+        <strong>15+</strong>
+        <span>Anos de experiência</span>
+      </article>
+      <article>
+        <strong>8k+</strong>
+        <span>Pacientes atendidos</span>
+      </article>
+      <article>
+        <strong>20+</strong>
+        <span>Especialidades</span>
+      </article>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="section-heading">
+        <p class="eyebrow">Serviços</p>
+        <h2>Nossas especialidades</h2>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-icon red"></span>
+          <h3>Clínico geral</h3>
+          <p>Consulta inicial, prevenção e acompanhamento de rotina.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon blue"></span>
+          <h3>Cardiologia</h3>
+          <p>Avaliação cardíaca, exames e orientação especializada.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon green"></span>
+          <h3>Ortopedia</h3>
+          <p>Tratamento para dores, lesões e problemas musculares.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon yellow"></span>
+          <h3>Oftalmologia</h3>
+          <p>Cuidados com visão, exames e acompanhamento ocular.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon pink"></span>
+          <h3>Dermatologia</h3>
+          <p>Diagnóstico e tratamento da pele, cabelo e unhas.</p>
+        </article>
+        <article class="service-card">
+          <span class="service-icon purple"></span>
+          <h3>Pediatria</h3>
+          <p>Atendimento para crianças com cuidado e acolhimento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="about-banner">
+        <p class="eyebrow">Sobre nós</p>
+        <h2>Sobre a VitaCare</h2>
+        <p>Há mais de 15 anos oferecendo atendimento médico com tecnologia, organização e foco no paciente.</p>
+      </div>
+
+      <div class="values">
+        <article>
+          <h3>Nossa missão</h3>
+          <p>Oferecer atendimento médico de qualidade, acessível e humanizado.</p>
+        </article>
+        <article>
+          <h3>Nossa visão</h3>
+          <p>Ser referência em saúde preventiva e cuidado integrado.</p>
+        </article>
+        <article>
+          <h3>Nossos valores</h3>
+          <p>Ética, transparência, respeito ao paciente e compromisso com resultados.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="agendar">
+      <div class="section-heading">
+        <p class="eyebrow">Agendamento</p>
+        <h2>Agende sua consulta</h2>
+      </div>
+
+      <form class="appointment-form" novalidate>
+        <div class="form-grid">
+          <label>
+            Nome completo
+            <input type="text" name="nome" placeholder="Seu nome" required>
+          </label>
+          <label>
+            Telefone
+            <input type="tel" name="telefone" placeholder="(00) 00000-0000" required>
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" placeholder="voce@email.com" required>
+          </label>
+          <label>
+            Data
+            <input type="date" name="data" required>
+          </label>
+          <label>
+            Especialidade
+            <select name="especialidade" required>
+              <option value="">Selecione</option>
+              <option>Clínico geral</option>
+              <option>Cardiologia</option>
+              <option>Ortopedia</option>
+              <option>Oftalmologia</option>
+              <option>Dermatologia</option>
+              <option>Pediatria</option>
+            </select>
+          </label>
+          <label>
+            Período
+            <select name="periodo" required>
+              <option value="">Selecione</option>
+              <option>Manhã</option>
+              <option>Tarde</option>
+              <option>Noite</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Observações
+          <textarea name="observacoes" rows="4" placeholder="Descreva sua necessidade"></textarea>
+        </label>
+
+        <p class="form-message" role="status"></p>
+        <button class="button primary submit-button" type="submit">Solicitar agendamento</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>VitaCare - Clínica Médica</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
