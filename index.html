@@ -7,41 +7,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="VitaCare">
-      <span class="brand-icon">+</span>
+  <header class="cabecalho">
+    <a class="marca" href="#home" aria-label="VitaCare">
+      <span class="icone-marca">+</span>
       VitaCare
     </a>
 
-    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+    <button class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <nav class="nav">
+    <nav class="menu">
       <a href="#home">Home</a>
       <a href="#servicos">Serviços</a>
       <a href="#sobre">Sobre</a>
-      <a class="nav-cta" href="#agendar">Agendar consulta</a>
+      <a class="menu-destaque" href="#agendar">Agendar consulta</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="tag">Atendimento humanizado</p>
+    <section class="destaque" id="home">
+      <div class="conteudo-destaque">
+        <p class="etiqueta">Atendimento humanizado</p>
         <h1>Cuidado com excelência para sua saúde</h1>
         <p>
           Profissionais qualificados, especialidades essenciais e uma experiência simples para marcar sua consulta.
         </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#agendar">Agendar consulta</a>
-          <a class="button secondary" href="#servicos">Ver especialidades</a>
+        <div class="acoes-destaque">
+          <a class="botao principal" href="#agendar">Agendar consulta</a>
+          <a class="botao secundario" href="#servicos">Ver especialidades</a>
         </div>
       </div>
 
-      <div class="hero-card" aria-label="Consultas disponíveis">
+      <div class="cartao-destaque" aria-label="Consultas disponíveis">
         <div>
           <span>Clínico geral</span>
           <strong>Hoje</strong>
@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <section class="stats" aria-label="Indicadores da clínica">
+    <section class="indicadores" aria-label="Indicadores da clínica">
       <article>
         <strong>15+</strong>
         <span>Anos de experiência</span>
@@ -72,54 +72,54 @@
       </article>
     </section>
 
-    <section class="section" id="servicos">
-      <div class="section-heading">
-        <p class="eyebrow">Serviços</p>
+    <section class="secao" id="servicos">
+      <div class="cabecalho-secao">
+        <p class="rotulo">Serviços</p>
         <h2>Nossas especialidades</h2>
       </div>
 
-      <div class="service-grid">
-        <article class="service-card">
-          <span class="service-icon red"></span>
+      <div class="grade-servicos">
+        <article class="cartao-servico">
+          <span class="icone-servico vermelho"></span>
           <h3>Clínico geral</h3>
           <p>Consulta inicial, prevenção e acompanhamento de rotina.</p>
         </article>
-        <article class="service-card">
-          <span class="service-icon blue"></span>
+        <article class="cartao-servico">
+          <span class="icone-servico azul"></span>
           <h3>Cardiologia</h3>
           <p>Avaliação cardíaca, exames e orientação especializada.</p>
         </article>
-        <article class="service-card">
-          <span class="service-icon green"></span>
+        <article class="cartao-servico">
+          <span class="icone-servico verde"></span>
           <h3>Ortopedia</h3>
           <p>Tratamento para dores, lesões e problemas musculares.</p>
         </article>
-        <article class="service-card">
-          <span class="service-icon yellow"></span>
+        <article class="cartao-servico">
+          <span class="icone-servico amarelo"></span>
           <h3>Oftalmologia</h3>
           <p>Cuidados com visão, exames e acompanhamento ocular.</p>
         </article>
-        <article class="service-card">
-          <span class="service-icon pink"></span>
+        <article class="cartao-servico">
+          <span class="icone-servico rosa"></span>
           <h3>Dermatologia</h3>
           <p>Diagnóstico e tratamento da pele, cabelo e unhas.</p>
         </article>
-        <article class="service-card">
-          <span class="service-icon purple"></span>
+        <article class="cartao-servico">
+          <span class="icone-servico roxo"></span>
           <h3>Pediatria</h3>
           <p>Atendimento para crianças com cuidado e acolhimento.</p>
         </article>
       </div>
     </section>
 
-    <section class="about" id="sobre">
-      <div class="about-banner">
-        <p class="eyebrow">Sobre nós</p>
+    <section class="sobre" id="sobre">
+      <div class="banner-sobre">
+        <p class="rotulo">Sobre nós</p>
         <h2>Sobre a VitaCare</h2>
         <p>Há mais de 15 anos oferecendo atendimento médico com tecnologia, organização e foco no paciente.</p>
       </div>
 
-      <div class="values">
+      <div class="valores">
         <article>
           <h3>Nossa missão</h3>
           <p>Oferecer atendimento médico de qualidade, acessível e humanizado.</p>
@@ -135,14 +135,14 @@
       </div>
     </section>
 
-    <section class="section" id="agendar">
-      <div class="section-heading">
-        <p class="eyebrow">Agendamento</p>
+    <section class="secao" id="agendar">
+      <div class="cabecalho-secao">
+        <p class="rotulo">Agendamento</p>
         <h2>Agende sua consulta</h2>
       </div>
 
-      <form class="appointment-form" novalidate>
-        <div class="form-grid">
+      <form class="formulario-agendamento" novalidate>
+        <div class="grade-formulario">
           <label>
             Nome completo
             <input type="text" name="nome" placeholder="Seu nome" required>
@@ -187,13 +187,13 @@
           <textarea name="observacoes" rows="4" placeholder="Descreva sua necessidade"></textarea>
         </label>
 
-        <p class="form-message" role="status"></p>
-        <button class="button primary submit-button" type="submit">Solicitar agendamento</button>
+        <p class="mensagem-formulario" role="status"></p>
+        <button class="botao principal botao-enviar" type="submit">Solicitar agendamento</button>
       </form>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="rodape">
     <p>VitaCare - Clínica Médica</p>
   </footer>
 
