@@ -1,31 +1,31 @@
-const menuButton = document.querySelector(".menu-button");
-const nav = document.querySelector(".nav");
-const form = document.querySelector(".appointment-form");
-const message = document.querySelector(".form-message");
+const botaoMenu = document.querySelector(".botao-menu");
+const menu = document.querySelector(".menu");
+const formulario = document.querySelector(".formulario-agendamento");
+const mensagem = document.querySelector(".mensagem-formulario");
 
-menuButton.addEventListener("click", () => {
-  const isOpen = nav.classList.toggle("open");
-  menuButton.setAttribute("aria-expanded", String(isOpen));
+botaoMenu.addEventListener("click", () => {
+  const estaAberto = menu.classList.toggle("aberto");
+  botaoMenu.setAttribute("aria-expanded", String(estaAberto));
 });
 
-nav.addEventListener("click", (event) => {
+menu.addEventListener("click", (event) => {
   if (event.target.tagName === "A") {
-    nav.classList.remove("open");
-    menuButton.setAttribute("aria-expanded", "false");
+    menu.classList.remove("aberto");
+    botaoMenu.setAttribute("aria-expanded", "false");
   }
 });
 
-form.addEventListener("submit", (event) => {
+formulario.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  if (!form.checkValidity()) {
-    message.textContent = "Preencha os campos obrigatórios.";
-    message.classList.add("error");
-    form.reportValidity();
+  if (!formulario.checkValidity()) {
+    mensagem.textContent = "Preencha os campos obrigatórios.";
+    mensagem.classList.add("erro");
+    formulario.reportValidity();
     return;
   }
 
-  form.reset();
-  message.textContent = "Solicitação enviada com sucesso.";
-  message.classList.remove("error");
+  formulario.reset();
+  mensagem.textContent = "Solicitação enviada com sucesso.";
+  mensagem.classList.remove("erro");
 });
