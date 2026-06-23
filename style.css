@@ -55,7 +55,7 @@ a {
 }
 
 .icone-marca {
-  display: grid;
+  display: flex;
   width: 22px;
   height: 22px;
   place-items: center;
@@ -64,6 +64,7 @@ a {
   border-radius: 5px;
   font-size: 17px;
   line-height: 1;
+  justify-content: center;
 }
 
 .menu {
